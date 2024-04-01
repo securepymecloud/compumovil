@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+<TextView
+android:id="@+id/textViewWelcome"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Bienvenido"
+android:textSize="24sp"
+android:textColor="@color/black"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="32dp"/>
+
+<ImageView
+android:id="@+id/imageViewLogo"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:src="@drawable/ic_launcher_background"
+    app:layout_constraintTop_toBottomOf="@id/textViewWelcome"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="16dp"/>
+
+<EditText
+android:id="@+id/editTextEmail"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:hint="Email"
+android:inputType="textEmailAddress"
+app:layout_constraintTop_toBottomOf="@id/imageViewLogo"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+android:layout_marginTop="32dp"/>
+
+<EditText
+android:id="@+id/editTextPassword"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:hint="Contraseña"
+android:inputType="textPassword"
+app:layout_constraintTop_toBottomOf="@id/editTextEmail"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+android:layout_marginTop="16dp"/>
+
+<CheckBox
+android:id="@+id/checkBoxRememberMe"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Recordar mis datos"
+app:layout_constraintTop_toBottomOf="@id/editTextPassword"
+app:layout_constraintStart_toStartOf="parent"
+android:layout_marginTop="16dp"/>
+
+<TextView
+android:id="@+id/textViewForgotPassword"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Olvidé mi usuario y/o contraseña"
+android:textSize="14sp"
+app:layout_constraintTop_toBottomOf="@id/checkBoxRememberMe"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+android:layout_marginTop="16dp"/>
+
+<Button
+android:id="@+id/buttonSignIn"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:text="Iniciar Sesión"
+android:background="@drawable/button_background"
+    app:layout_constraintTop_toBottomOf="@id/textViewForgotPassword"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="32dp"/>
+
+<TextView
+android:id="@+id/textViewGoogleSignInPrompt"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="ó iniciar usando una cuenta google"
+android:textSize="14sp"
+app:layout_constraintTop_toBottomOf="@id/buttonSignIn"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+android:layout_marginTop="16dp"/>
+
+<ImageView
+android:id="@+id/imageViewGoogleSignIn"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:src="@drawable/ic_launcher_background"
+    app:layout_constraintTop_toBottomOf="@id/textViewGoogleSignInPrompt"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="16dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
